@@ -1,0 +1,331 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+::selection {
+    background: #808080;
+    color: #808080;
+}
+
+.topnav{
+  position:relative;
+  background-color:#ffffff;
+  opacity: 0.2;
+  color: #FFFFFF;
+  overflow: auto;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+}
+
+
+.topnav a {
+    float: left;
+    display: left;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    
+
+}
+.topnav a:hover {
+    background-color: grey;
+    color:yellow;
+    font-weight: 70;
+        
+}
+
+.topnav .icon {
+    display:none;
+}
+
+.motto{
+  font-family: 'Josefin Sans', sans-serif;
+  font-style:italic;
+  font-size: 20px;
+}
+
+
+hr {
+    display: block;
+    height: 10px;
+    border: 0;
+    border-top: 5px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #000;
+    color: #000;
+    padding: 0.2em 0;
+}
+ #carbonads-container {
+                position: fixed;
+                bottom: 50px;
+                right: 50px;
+                z-index: 1000000;
+                display: none;
+            }
+
+#carbonads-container img,
+#carbonads-container a {
+                display: block;
+            }
+
+@media only screen and (min-width: 800px) {
+#carbonads-container {
+   display: block;
+                }
+            }
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+h1 {
+  font: 27px/2.7 'Montserrat', sans-serif;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 28%;
+  margin:15px;
+  font-size: 50px;
+
+}
+
+
+
+#particle {
+  background-color: #000000;
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:0; 
+}
+#overlay {
+  position: relative;
+}
+
+
+
+/* Our CSS will go here */
+
+.bcg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+.hero {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.top {
+  overflow: hidden;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 50%;
+  border: 1px rgba(255, 255, 255, 0.2) solid;
+  border-width: 1px 1px 0 1px;
+}
+
+.homeSlide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.homeSlide.slide01 {
+  background: url(../img/gpark1.png) no-repeat bottom center;
+  background-size: cover;
+}
+.bottom .homeSlide.slide01 {
+  background: url(../img/gparkbott.png) no-repeat top center;
+  background-size: cover;
+}
+
+
+.divider {
+  z-index: 3;
+  position: relative;
+  top: 50%;
+  margin-top: -30px;
+  left: -200px;
+  right: -200px;
+  height: 20px;
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 0%, rgba(34, 34, 34, 0) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(34, 34, 34, 0) 100%);
+}
+
+.bottom {
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  border: 1px rgba(255, 255, 255, 0.2) solid;
+  border-width: 0 1px 1px 1px;
+}
+.bottom p {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 300;
+  opacity: 0.7;
+  text-align: center;
+}
+.bottom a {
+  color: #fff;
+}
+.footer{
+  text-align:center;
+  padding-top: 18%;
+  font-size: 3px;
+  height:20%;
+  color:#FFFFFF;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: visible;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+   
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+
+    
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
