@@ -1,21 +1,36 @@
+//express makes it 
+//easier to organize our app's 
+//functionality with middleware and routing
 var express = require("express");
-var bodyParser = require("body-parser");
-
-var PORT = process.env.PORT || 3000;
+// var app is an instance of express function
 var app = express();
 
+
+//assigned var 'PORT' to a hosting service env
+//or local host 3000
+var PORT = process.env.PORT || 3000;
+
+
+var bodyParser = require("body-parser");
+
+//this middleware is used to serve everything from 
+//our 'public' directory (html,css,js,imgs)
 app.use(express.static(__dirname + "/public"));
 
+// var routes = require("./routes/tenantLogin.js");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-var routes = require("./controllers/pmController.js");
+//will be use for handlebars
+var exphbs = require("express-handlebars");
+// app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+// app.set("view engine", "handlebars");
 
-app.use("/", routes);
-app.use("/update", routes);
-app.use("/create", routes);
+// app.use('/login', routes);
 
 
+//we call listen() 
+//which binds our server to PORT  
 app.listen(PORT, function() {
-    console.log("Listening on port:%s", PORT);
+    console.log("Listening on PORT: ", PORT);
 });
