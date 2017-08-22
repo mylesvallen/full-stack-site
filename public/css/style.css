@@ -169,6 +169,7 @@ textarea {
   outline: none;
   border-radius: 0;
   padding: 10px 0;
+  margin-bottom: 15px;
   font-size: 2rem;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;

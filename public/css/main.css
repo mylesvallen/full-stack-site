@@ -107,6 +107,13 @@ input[type="checkbox"]:checked + label span {
   color:#fff;
 
 }
+.log-footer{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+  color:#fff;
+}
 
 .btn {
     width: 70px;
