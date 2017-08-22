@@ -1,14 +1,11 @@
-var Sequelize = require("sequelize");
+var Sequelize = require('sequelize');
 
-var sequelize = new Sequelize("propertymgt", "root", "", {
-  host: "localhost",
-  dialect: "mysql",
-  user: "root",
-  pool: {
-  	max: 5
-  	min: 0, 
-  	idle: 10000
-  }
+var connection = new Sequelize('propertymgt', 'root', '');
+
+var Article = connection.define('article', {
+    //properties goes here
+    //title: Sequelize.STRING, 
+    //body: Sequelize.TEXT
 });
 
 module.exports = sequelize;
