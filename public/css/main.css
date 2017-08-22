@@ -1,40 +1,95 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 ::selection {
-    background: #808080;
-    color: #808080;
+    color: purple;
 }
-
+.container-blog{
+  background-color: #75CACA;
+  opacity:0.7;
+  margin-right: 15%;
+  margin-left:15%;
+  margin-bottom:15%;
+  margin-top:15%;
+  padding:20%;
+  
+}
 .topnav{
   position:relative;
-  background-color:#ffffff;
-  opacity: 0.2;
-  color: #FFFFFF;
+  background-color:azure;
+  opacity: 0.7;
   overflow: auto;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 30px;
+  font-size: 40px;
 }
 
-
+#tenant-input{
+  font-size: 20px;
+  color:#fff;
+  text-align: center;
+}
 .topnav a {
     float: left;
     display: left;
+    color:purple;
     text-align: center;
     padding: 20px;
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
     
 
 }
 .topnav a:hover {
-    background-color: grey;
-    color:yellow;
+    background-color: purple;
+    color:white;
     font-weight: 70;
         
 }
 
 .topnav .icon {
     display:none;
+}
+.topnav-tenant {
+  position:relative;
+  background-color:azure;
+  font-color:purple;
+  opacity: 0.8;
+  overflow: auto;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  margin-top: 1%;
+ margin-bottom:4%;
+
+}
+.topnav-tenant a:hover{
+   background-color: purple;
+    color:white;
+    font-weight: 70;
+}
+.topnav-tenant a {
+  text-decoration: none;
+  color:purple;
+  padding: 15px;
+  float: right;
+  display: left;
+
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background-color: #ffffff;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background-color: #000
+          
 }
 
 .motto{
@@ -44,6 +99,60 @@
 }
 
 
+.footer-t{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 25%;
+  color:#fff;
+
+}
+.log-footer{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+  color:#fff;
+}
+
+.btn {
+    width: 70px;
+    height: 25px;
+    border-radius: 4px;
+    float:right;
+    margin-right: 43%;
+    border: 1px solid #fff;
+    background: #fff;
+    margin-top: 10%;
+    color: #808080;
+}
+
+.btn:hover {
+    border: 1px solid #000;
+    text-shadow: #333333 0 1px 0;
+    background: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(purple), to(purple));
+    background-image: -ms-linear-gradient(top, purple 0%, purple 100%);
+    color: #fff;
+ }
+
+.btn:active {
+    margin-top:1px;
+    text-shadow: #333333 0 -1px 0;
+    border: 1px solid #fff;
+    background: #808080;
+    background: -webkit-gradient(linear, left top, left bottom, from(#75CACA), to(#75CACA));
+    background: -webkit-linear-gradient(top, #fff, #fff);
+    background: -moz-linear-gradient(top, #fff, #fff);
+    background: -ms-linear-gradient(top, #fff, #fff);
+    background: -o-linear-gradient(top, #fff, #fff);
+    background-image: -ms-linear-gradient(top, #fff 0%, #fff 100%);
+    color: #fff;
+    -webkit-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+   }
+
 hr {
     display: block;
     height: 10px;
@@ -51,6 +160,52 @@ hr {
     border-top: 5px solid #ccc;
     margin: 1em 0;
     padding: 0;
+}
+
+
+
+form {
+    margin-left:auto;
+    margin-right:auto;
+    width: 343px;
+    opacity:0.8;
+    height: 370px;
+    padding:30px;
+    border: 1px solid #fff;
+    -moz-border-radius: 5px;
+    background-color: grey;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; 
+    -moz-box-shadow: 0 0 13px 3px;
+    -webkit-box-shadow: 0 0 13px 3px ;
+    box-shadow: 0 0 13px 3px ;
+    overflow: hidden; 
+}
+
+textarea{
+	  background: rgba(255, 255, 255, 0.4)  16px 16px; 
+    width: 276px;
+    height: 70px;
+    border: 1px solid #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; 
+    display:block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:16px;
+    color:#fff;
+    padding-left:45px;
+    padding-right:20px;
+    padding-top:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    overflow:hidden;
 }
 
 audio,
@@ -78,19 +233,6 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
- #carbonads-container {
-                position: fixed;
-                bottom: 50px;
-                right: 50px;
-                z-index: 1000000;
-                display: none;
-            }
-
-#carbonads-container img,
-#carbonads-container a {
-                display: block;
-            }
-
 @media only screen and (min-width: 800px) {
 #carbonads-container {
    display: block;
@@ -112,7 +254,6 @@ h1 {
   font-size: 50px;
 
 }
-
 
 
 #particle {
@@ -216,12 +357,12 @@ h1 {
 }
 
 
-
-
-
-
-
-
+.help{
+  color:purple;
+  font-style: bold;
+  font-family: 'Josefin Sans', sans-serif; 
+  font-size: 25px;
+}
 
 /* ==========================================================================
    Media Queries
@@ -247,44 +388,7 @@ h1 {
     visibility: hidden;
 }
 
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
-    visibility: visible;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
 
 /* ==========================================================================
    Print styles
@@ -318,6 +422,7 @@ h1 {
 
     h2,
     h3 {
+
         orphans: 3;
         widows: 3;
 
