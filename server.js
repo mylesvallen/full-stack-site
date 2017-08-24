@@ -24,8 +24,10 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 var tenantLogin = require("./controllers/tenantlogin_controller.js");
-
 app.use(tenantLogin);
+
+var propertyRatings = require("./controllers/propratings_controller.js");
+app.use(propertyRatings);
 
 //we call listen() 
 //which binds our server to PORT  

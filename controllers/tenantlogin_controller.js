@@ -7,7 +7,10 @@ var dbModels = require('../models');
 //-----------------------------------
 
 router.get('/login', function(req, res) {
-    res.render('tenant');
+    res.render('tenant_login');
+});
+router.get('/login/user', function(req, res) {
+    res.render('login_user');
 });
 
 // router.post('/login', function (req, res) {
