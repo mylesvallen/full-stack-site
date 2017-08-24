@@ -35,6 +35,11 @@ a:hover {
   position: relative;
 }
 
+.footer-l{
+  color:#fff;
+  font-size: 10px;
+}
+
 .form {
   background: rgba(19, 35, 47, 0.9);
   background-color:#808080;
@@ -59,7 +64,7 @@ a:hover {
 .tab-group li a {
   display: block;
   text-decoration: none;
-  padding: 15px;
+  padding: 13px;
   background: rgba(160, 179, 176, 0.25);
   color: #75CACA;
   font-size: 20px;
@@ -87,7 +92,7 @@ h1 {
   text-align: center;
   color: purple;
   font-weight: 300;
-  margin: 0 0 40px;
+  margin: 0 0 15px;
 }
 
 label {
@@ -124,7 +129,7 @@ label.highlight {
 input, textarea {
   font-size: 22px;
   display: block;
-  width: 100%;
+  width: 80%;
   height: 100%;
   padding: 5px 10px;
   background: none;
@@ -147,7 +152,7 @@ textarea {
 
 .field-wrap {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .top-row:after {
@@ -157,7 +162,7 @@ textarea {
 }
 .top-row > div {
   float: left;
-  width: 48%;
+  width: 45%;
   margin-right: 4%;
 }
 .top-row > div:last-child {
@@ -172,7 +177,7 @@ textarea {
   margin-bottom: 15px;
   font-size: 2rem;
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 200;
   letter-spacing: .1em;
   background: #75CACA;
   color: #ffffff;
