@@ -94,3 +94,24 @@
 </div> <!-- /form -->
 
 
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script src="/vex-3.0.0/dist/js/vex.combined.min.js"></script>
+
+<script src="./vex-3.0.0/dist/js/vex.combined.min.js"></script>
+<script>vex.defaultOptions.className = 'vex-theme-os'</script>
+
+<script>
+                vex.dialog.confirm({
+                    message: 'Are you absolutely sure you want to destroy the alien planet?',
+                    callback: function(value) {
+                        if (value) {
+                            console.log('Successfully destroyed the planet.')
+                        } else {
+                            console.log('Chicken.')
+                        }
+                    }
+                })
+</script>
+
+

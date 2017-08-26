@@ -6,6 +6,8 @@ var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
 
+var db = require('./models');
+
 //assigned var 'PORT' to a hosting service env
 //or local host 3000
 var PORT = process.env.PORT || 3000;
@@ -31,6 +33,9 @@ app.use(propertyRatings);
 
 //we call listen() 
 //which binds our server to PORT  
-app.listen(PORT, function() {
-    console.log("Listening on PORT: ", PORT);
+
+db.sequelize.sync().then(function() {
+    app.listen(PORT, function() {
+        console.log("App listening on PORT " + PORT);
+    });
 });

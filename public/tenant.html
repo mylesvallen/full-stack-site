@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html class="no-js" lang="">
 
 <head>
@@ -16,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Josefin+Sans|Bad+Script" rel="stylesheet">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
+
+    <link rel="stylesheet" href="/vex-3.0.0/dist/css/vex.css" />
+    <link rel="stylesheet" href="/vex-3.0.0/dist/css/vex-theme-os.css" />
     <title>Tenant page</title>
 
 </head>
@@ -35,33 +37,14 @@
             </div>
 
             <form>
-                <h3 class="help">How Can We Help You Today?</h3>
-                <textarea rows="4" cols="50" name="subject" placeholder="Request maintenance" class="message" required></textarea>
-                <textarea rows="4" cols="50" name="subject" placeholder="Please enter any thoughts or concerns" class="message" required></textarea>
-                <input type="checkbox" id="c1" name="submit" value="send" />
-                <label for="c1"><span></span>Pay Rent</label>
-                <input name="submit" class="btn" type="submit" value="Send" />
-
+                <h3 class="help">Tenant Connect</h3>
+                <button id="forceModal">Pay Rent</button>
 
                 <footer class="tenant-footer">
-                    <p class="footer-t"> Copyright 2017, The Homeroom </p>
+                    <p class="footer-t"> Copyright 2017, Tenant Connect</p>
                 </footer>
 
             </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
             <script>
@@ -77,10 +60,27 @@
 
             <script src="js/plugins.js"></script>
             <script src="js/main.js"></script>
+            <script src="/vex-3.0.0/dist/js/vex.combined.min.js"></script>
+            <script>
+                vex.defaultOptions.className = 'vex-theme-os'
+            </script>
 
-
+            <script>
+                vex.dialog.confirm({
+                    message: 'Are you absolutely sure you want to destroy the alien planet?',
+                    callback: function(value) {
+                        if (value) {
+                            console.log('Successfully destroyed the planet.')
+                        } else {
+                            console.log('Chicken.')
+                        }
+                    }
+                })
+            </script>
 
 
 </body>
+
+
 
 </html>

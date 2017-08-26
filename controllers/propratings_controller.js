@@ -6,7 +6,8 @@ var dbModels = require('../models');
 
 
 router.get('/guest', function(req, res) {
-    res.render('property_ratings');
+    var myDbWIllCreateThis = [];
+    res.render('property_ratings', { ratings_data: myDbWIllCreateThis });
 });
 
 

@@ -23,6 +23,7 @@
         "express-handlebars": "^3.0.0",
         "mysql2": "^1.4.1",
         "passport": "^0.4.0",
-        "sequelize": "^4.6.0"
+        "sequelize": "^4.6.0",
+        "vex-js": "^4.0.0"
     }
 }
