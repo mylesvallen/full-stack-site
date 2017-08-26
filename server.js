@@ -23,7 +23,7 @@ var PORT = process.env.PORT || 3000;
 //our 'public' directory (html,css,js,imgs)
 app.use(express.static(__dirname + "/public"));
 
-<<<<<<< HEAD
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
