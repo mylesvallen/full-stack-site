@@ -39,6 +39,11 @@ a:hover {
     position: relative;
 }
 
+.footer-l{
+  color:#fff;
+  font-size: 10px;
+}
+
 .form {
     background: rgba(19, 35, 47, 0.9);
     background-color: #808080;
@@ -63,6 +68,20 @@ a:hover {
 }
 
 .tab-group li a {
+<<<<<<< HEAD
+  display: block;
+  text-decoration: none;
+  padding: 13px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #75CACA;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+=======
     display: block;
     text-decoration: none;
     padding: 15px;
@@ -75,6 +94,7 @@ a:hover {
     cursor: pointer;
     -webkit-transition: .5s ease;
     transition: .5s ease;
+>>>>>>> origin
 }
 
 .tab-group li a:hover {
@@ -91,11 +111,52 @@ a:hover {
     display: none;
 }
 
+.top-login{
+
+}
+.topnav-login{
+   position:relative;
+  background-color:azure;
+  font-color:purple;
+  opacity: 0.8;
+  overflow: auto;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  margin-top: 1%;
+ margin-bottom:4%;
+}
+.topnav .icon {
+    display:none;
+}
+
+.topnav-login a:hover{
+  background-color: purple;
+    color:white;
+    font-weight: 70;
+}
+.topnav-login a{
+   float: right;
+    display: left;
+    color:purple;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
 h1 {
+<<<<<<< HEAD
+  text-align: center;
+  color: purple;
+  font-weight: 300;
+  margin: 0 0 15px;
+=======
     text-align: center;
     color: purple;
     font-weight: 300;
     margin: 0 0 40px;
+>>>>>>> origin
 }
 
 label {
@@ -131,6 +192,25 @@ label.highlight {
     color: #ffffff;
 }
 
+<<<<<<< HEAD
+input, textarea {
+  font-size: 22px;
+  display: block;
+  width: 80%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #75CACA;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+input:focus, textarea:focus {
+  outline: 0;
+  border-color: #fff;
+=======
 input,
 textarea {
     font-size: 22px;
@@ -151,6 +231,7 @@ input:focus,
 textarea:focus {
     outline: 0;
     border-color: #fff;
+>>>>>>> origin
 }
 
 textarea {
@@ -159,8 +240,13 @@ textarea {
 }
 
 .field-wrap {
+<<<<<<< HEAD
+  position: relative;
+  margin-bottom: 30px;
+=======
     position: relative;
     margin-bottom: 40px;
+>>>>>>> origin
 }
 
 .top-row:after {
@@ -168,11 +254,18 @@ textarea {
     display: table;
     clear: both;
 }
+<<<<<<< HEAD
+.top-row > div {
+  float: left;
+  width: 45%;
+  margin-right: 4%;
+=======
 
 .top-row>div {
     float: left;
     width: 48%;
     margin-right: 4%;
+>>>>>>> origin
 }
 
 .top-row>div:last-child {
@@ -180,6 +273,26 @@ textarea {
 }
 
 .button {
+<<<<<<< HEAD
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 10px 0;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  letter-spacing: .1em;
+  background: #75CACA;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+.button:hover, .button:focus {
+  background: #fff;
+  color:#75CACA;
+=======
     border: 0;
     outline: none;
     border-radius: 0;
@@ -200,6 +313,7 @@ textarea {
 .button:focus {
     background: #fff;
     color: #75CACA;
+>>>>>>> origin
 }
 
 .button-block {
