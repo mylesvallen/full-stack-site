@@ -88,6 +88,40 @@ a:hover {
   display: none;
 }
 
+.top-login{
+
+}
+.topnav-login{
+   position:relative;
+  background-color:azure;
+  font-color:purple;
+  opacity: 0.8;
+  overflow: auto;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  margin-top: 1%;
+ margin-bottom:4%;
+}
+.topnav .icon {
+    display:none;
+}
+
+.topnav-login a:hover{
+  background-color: purple;
+    color:white;
+    font-weight: 70;
+}
+.topnav-login a{
+   float: right;
+    display: left;
+    color:purple;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
 h1 {
   text-align: center;
   color: purple;

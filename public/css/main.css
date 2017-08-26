@@ -48,6 +48,7 @@
 .topnav .icon {
     display:none;
 }
+
 .topnav-tenant {
   position:relative;
   background-color:azure;
@@ -165,7 +166,29 @@ input[type="checkbox"]:checked + label span {
     background-color:#808080; /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
+.container-review{
+  background-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
 
+
+}
+.comment{
+  font-size:16px;
+  margin-left: 3px;
+  font-color:#000;
+  font-family: 'Josefin Sans', sans-serif;
+  font-variant: bold;
+  
+}
+.review{
+  color:#808080;
+  font-size: 16px;
+  margin-left: 3px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-indent: right;
+}
 /* Modal Content/Box */
 .modal-content {
     background-color: #808080;
@@ -191,6 +214,38 @@ input[type="checkbox"]:checked + label span {
     cursor: pointer;
 }
 
+.rating-static {
+    width: 70px;
+    height: 16px;
+    display: block;
+    background: url('http://www.itsalif.info/blogfiles/rating/star-rating.png') 0 0 no-repeat;
+  }
+
+  .rating-footer{
+    margin-bottom:2%;
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 16px;
+
+  }
+  .footer-r{
+
+  }
+  
+  .rating-50 { background-position: 0 0; }
+  .rating-40 { background-position: -12px 0; } 
+  .rating-30 { background-position: -24px 0; }
+  .rating-20 { background-position: -36px 0; }
+  .rating-10 { background-position: -48px 0; }
+  .rating-0 { background-position: -60px 0; }
+   
+  .rating-5  { background-position: -48px -16px; }
+  .rating-15 { background-position: -36px -16px; }
+  .rating-25 { background-position: -24px -16px; }
+  .rating-35 { background-position: -12px -16px; }
+  .rating-45 { background-position: 0 -16px; }
+
 hr {
     display: block;
     height: 10px;
@@ -198,6 +253,34 @@ hr {
     border-top: 5px solid #ccc;
     margin: 1em 0;
     padding: 0;
+}
+
+.ratings-form{
+  width:50%;
+  height:60%;
+}
+
+.btn-btn-secondary{
+  display:center;
+  width: 70px;
+    height: 25px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    background: #fff;
+
+
+}
+
+#enter_text{
+  display:center;
+  text-align: center;
+  margin-left: 35%;
+
+}
+
+.image{
+  margin-bottom: 3%;
+
 }
 
 
@@ -292,6 +375,18 @@ h1 {
   font-size: 50px;
 
 }
+{
+
+  float:left;
+}
+
+h5{
+  font-family:16px 'Josefin Sans', sans-serif;
+  color:white;
+  
+
+}
+
 
 
 #particle {
